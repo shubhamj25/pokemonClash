@@ -1,0 +1,41 @@
+@import "../../stylesheets/_colors.scss";
+@import "../../stylesheets/_variables.scss";
+@import "../../stylesheets/_mediaQuery.scss";
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $popup-overlay;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+
+  .popup {
+    position: relative;
+    border-radius: 12px;
+    background: $white;
+    padding: 2rem;
+    max-height: 80vh;
+    .close-icon {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      cursor: pointer;
+    }
+    .content {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media #{$larger-than-mobile} {
+    .popup {
+      max-width: 80vw;
+    }
+  }
+}

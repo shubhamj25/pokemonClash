@@ -1,0 +1,56 @@
+@import "../../../stylesheets/_colors.scss";
+.user-info {
+  display: flex;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: $fb;
+  border-radius: 12px;
+  max-width: 900px;
+  width: fit-content;
+  min-height: 128px;
+  height: fit-content;
+  padding-right: 8px;
+  .avatar {
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 16px;
+  }
+  .tile {
+    margin: auto 0;
+    .title {
+      display: flex;
+      font-size: 18px;
+      color: white;
+      font-weight: 800;
+      white-space: nowrap;
+      .title-content {
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 400px;
+        padding-left: 16px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    }
+    .sub-title {
+      display: flex;
+      font-size: 18px;
+      color: white;
+      font-weight: 800;
+      letter-spacing: 2px;
+      .subtitle-content {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 350px;
+        padding-left: 16px;
+        padding-right: 32px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

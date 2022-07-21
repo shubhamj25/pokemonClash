@@ -1,0 +1,86 @@
+.pokemon-card {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  width: 264px;
+  .categories {
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    .pokemon-type {
+      padding: 2px 12px;
+      margin: 0 2px;
+      border-radius: 12px;
+      border: 2px solid #00a2ed;
+      font-size: 14px;
+      color: #00a2ed;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 600;
+    }
+  }
+  .img {
+    display: flex;
+    padding: 4px;
+    img {
+      padding: 16px;
+      border-radius: 12px;
+      height: 248px;
+      width: 248px;
+      margin: 0 auto;
+    }
+  }
+  .name {
+    padding: 8px 0;
+    display: flex;
+    justify-content: left;
+    padding-left: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
+    .stat {
+      cursor: pointer;
+      display: flex;
+      width: calc(100% - 8px);
+      border-radius: 8px;
+      padding: 8px;
+      margin: 2px;
+      background-color: #00a2ed;
+      &.HP {
+        background-color: red;
+      }
+      &.Attack {
+        background-color: green;
+      }
+      &.Defense {
+        background-color: skyblue;
+      }
+      &.SpAttack {
+        background-color: #764fdf;
+      }
+      &.SpDefense {
+        background-color: gray;
+      }
+      &.Speed {
+        background-color: #00a2ed;
+      }
+      .key {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .value {
+        color: #ffffff;
+        padding-left: 8px;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+  }
+}

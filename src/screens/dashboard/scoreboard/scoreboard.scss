@@ -1,0 +1,97 @@
+@import "../../../stylesheets/_colors.scss";
+.score-board {
+  background-color: gold;
+  border-radius: 12px;
+  min-width: 350px;
+  max-height: 540px;
+  overflow: hidden;
+  border: 4px solid #4f264f;
+  .title {
+    font-size: 26px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 16px;
+    color: #4f264f;
+    padding-bottom: 16px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px;
+    column-gap: 24px;
+    .score {
+      border: 3px solid #4f264f;
+      background-color: white;
+      border-radius: 12px;
+      font-size: 26px;
+      padding-top: 24px;
+      text-align: center;
+      padding-bottom: 24px;
+      font-weight: 800;
+      .tag {
+        position: relative;
+        top: -36px;
+        color: white;
+        min-width: 80px;
+        font-size: medium;
+        text-align: center;
+        width: fit-content;
+        padding: 4px 8px;
+        margin: 0 auto;
+        border-radius: 16px;
+        background: #4f264f;
+      }
+    }
+  }
+  .desc {
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .verify-cards {
+    width: calc(100% - 64px);
+    margin: 0 auto;
+    background-color: green;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: justify;
+    color: white;
+    text-align: center;
+  }
+  .round-no {
+    width: calc(100% - 64px);
+    margin: 0 auto;
+    background-color: #4f264f;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: justify;
+    color: white;
+    text-align: center;
+    .round-no-subtitle {
+      font-size: 15px;
+      padding-top: 4px;
+      color: rgb(255, 211, 220);
+      &.verified {
+        color: rgb(211, 255, 229);
+      }
+    }
+  }
+  svg {
+    transform: translateY(-36px) !important;
+  }
+  rect {
+    fill: gold;
+  }
+}

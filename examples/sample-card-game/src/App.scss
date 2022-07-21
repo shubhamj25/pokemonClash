@@ -1,0 +1,129 @@
+main {
+  margin-top: 60px;
+}
+
+form {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.container-fluid{
+  margin-top: 10rem;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+.task-content{
+  padding-left: 16px;
+  font-weight: 800;
+}
+.rules{
+  margin: 16px;
+  padding: 16px;
+  display: inherit;
+  .heading{
+    font-size: large;
+    font-weight: 900;
+    letter-spacing: 4px;
+    display: flex;
+    margin: 0 auto;
+  }
+  font-family: 'Courier New', Courier, monospace;
+  .rule{
+    color: #626262;
+    font-weight: 600;
+  }
+}
+
+.account-status{
+  color: #626262;
+  font-size: 16px;
+  word-break: break-all;
+  font-weight: 800;
+  padding: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-pack{
+  font-size: 18px;
+  padding: 0 18px;
+  color: black;
+}
+.loading{
+  font-size: 16px;
+  font-weight: 800;
+  padding: 16px;
+  color: skyblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button{
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 800;
+  border-radius: 8px;
+  padding: 16px;
+  color: rgb(42, 136, 224);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.trump{
+  padding: 8px 8px 8px 0;
+  display: flex;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.danger{
+  padding: 0 16px 24px 16px;
+  color: orange;
+}
+.more-danger{
+  padding: 0 16px 24px 16px;
+  color: red;
+}
+.extra-message{
+  padding: 0 16px 24px 16px;
+  color: mediumslateblue;
+}
+.disconnect{
+  width: fit-content;
+  display: flex;
+  align-self: center;
+  padding: 8px 12px;
+  margin-left: 12px;
+}
+.success{
+  color: greenyellow;
+}
+.player-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,264px);
+  column-gap: 16px;
+  row-gap: 16px;
+  padding: 16px;
+}
+
+.outlined{
+  border: 2px solid red !important;
+}
+
+.border {
+  border:2px dashed skyblue !important;
+}
+
+#completedTaskList .content {
+  color: grey;
+  text-decoration: line-through;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: darkgray;
+  border: none;
+  color: whitesmoke;
+  padding: 8px 16px;
+  width: 200px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}

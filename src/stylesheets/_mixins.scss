@@ -1,0 +1,36 @@
+@mixin font-style($weight, $size, $lineHeight, $color) {
+  font-weight: #{$weight};
+  font-size: #{$size};
+  line-height: #{$lineHeight}px;
+  color: #{$color};
+}
+
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin multi-line-text-ellipsis($noOfLines) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $noOfLines;
+  -webkit-box-orient: vertical;
+}
+
+@mixin horizontal-scroll {
+  display: -webkit-box;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+@mixin input-style {
+  font-family: "Poppins", sans-serif;
+  box-shadow: $box-shadow-pill;
+  box-sizing: border-box;
+  outline: 1px solid map-get($gray, "0");
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  &:focus {
+    outline: 1px solid $accent;
+  }
+}

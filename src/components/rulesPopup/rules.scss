@@ -1,0 +1,19 @@
+.rules {
+  display: inherit;
+  max-width: 540px;
+  margin: 16px;
+  .heading {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    display: flex;
+    padding-bottom: 8px;
+    margin: 0 auto;
+  }
+  .rule {
+    color: #626262;
+    font-weight: 600;
+    margin: 8px;
+    font-size: 20px;
+  }
+}

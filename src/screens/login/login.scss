@@ -1,0 +1,32 @@
+@import "../../stylesheets/common.scss";
+.login {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  .content {
+    margin: 0 auto;
+    .cta {
+      cursor: pointer;
+      font-size: 26px;
+      justify-content: center;
+      padding: 10px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-style: italic;
+      font-weight: 800;
+      line-height: 150%;
+      align-items: center;
+      display: flex;
+      img {
+        padding: 16px 28px;
+      }
+      .subtitle {
+        font-size: 22px;
+        line-height: 130%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        max-width: 400px;
+      }
+    }
+  }
+}
