@@ -1,5 +1,5 @@
-# game-poc
-# Getting Started with Create React App
+# Pokemon Clash
+# Ethereum powered dapp
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
